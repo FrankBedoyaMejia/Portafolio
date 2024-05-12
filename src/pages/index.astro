@@ -10,6 +10,8 @@ import LinkedInIcon from "../icons/LinkedIn.astro";
 import MailIcon from "../icons/Mail.astro";
 import BrieftCaseIcon from "../icons/BrieftCase.astro";
 import SocialPill from "../icons/SocialPill.astro";
+import CodeIcon from "../icons/Code.astro";
+import Proyectos from "../components/Proyectos.astro";
 ---
 
 <Layout
@@ -17,7 +19,7 @@ import SocialPill from "../icons/SocialPill.astro";
   description="Contrata a Frank para crear tu aplicacion web. Desarrollador Web. Especializado en crear aplicaciones únicas."
 >
   <main class="px-4">
-    <SectionContainer class="py-44 pb-24">
+    <SectionContainer class="py-44 pb-32">
       <img
         class="rounded-full size-12 mb-4"
         src="/public/IMG-20230323-WA0002.webp"
@@ -61,13 +63,19 @@ import SocialPill from "../icons/SocialPill.astro";
     </SectionContainer>
 
     <SectionContainer id="experiencia">
-      <h2 class="text-4xl font-semibold mb-6 flex gap-x-3 items-center">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
         <BrieftCaseIcon class="size-7" />
         Experiencia Laboral
       </h2>
       <Experience />
     </SectionContainer>
 
-    <SectionContainer id="proyectos"> Proyectos </SectionContainer>
+    <SectionContainer id="proyectos">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <CodeIcon class="size-7" />
+        Proyectos
+      </h2>
+      <Proyectos />
+    </SectionContainer>
   </main>
 </Layout>
